@@ -7,7 +7,7 @@ my COHORT 3.0 journey with Harkirat.<br>
 
 The purpose of this repository is to document my journey from scratch.
 
-Thanks 
+Thanks for checking this out.
 
 
 
