@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@462&display=swap" rel="stylesheet"> -->
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            /* font-family: "Dancing Script", cursive; */
+        }
+        body{
+            background-color:#31473A;
+            
+        }
+        #mainbox{
+            margin: auto;
+            margin-top: 4%;
+            height: 600px;
+            width: 1000px;
+            border: 4px solid #EDF4F2;
+            border-radius: 10px;
+        }
+        #heading{
+            display: flex;
+            margin: 20px;
+            justify-content: space-between;
+            color: #EDF4F2;
+           
+        }
+        #taskbox{
+            margin: auto;
+            height: 80%;
+            width: 90%;
+            border: 2px solid #EDF4F2;
+            border-radius: 7px;
+            overflow-y: scroll;
+        }
+        #button{
+            background-color: #c9b21c;
+            margin-top: 3px;
+            width: 150px;
+            height: 35px;
+            margin-right: 17px;
+            font-size: 20px;
+            border-radius: 7px;
+            border: 2px solid #EDF4F2;
+            color: aliceblue;
+        }
+        #textbox{
+            font-size: 15px;
+            border: 2px solid #EDF4F2;
+            border-radius: 7px;
+            margin-top: 6px;
+            width:200px;
+            height: 26px;
+            margin-left: 150px;
+            display: flex;
+            box-sizing: border-box;
+            background-color: #31473A;
+            color: #EDF4F2;
+        }
+        .tasks{
+            margin-top: 20px;
+            width: 90%;
+            margin-left: 40px;
+            display: flex;
+            color: #EDF4F2;
+            font-size: 22px;
+            justify-content: space-between;
+        }
+        .remove_button{
+            background-color:#ee570b;
+            width: 100px;
+            border: 2px solid #EDF4F2;
+            border-radius: 7px;
+            height: 33px;
+            font-size: 17px;
+            color: #EDF4F2;
+        }
+        .edit_button{
+            background-color:#0b7cee;
+            width: 100px;
+            border: 2px solid #EDF4F2;
+            border-radius: 7px;
+            height: 33px;
+            font-size: 17px;
+            color: #EDF4F2;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="mainbox">
+    <div id="heading">              
+    <h1>TODO LIST APPLICATION </h1> 
+    <input type="text" id="textbox" >
+    <button id="button" onclick="addnewtask()"> Add Task </button>
+    </div>
+    <div id="taskbox">
+    
+    </div>
+        
+    </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>

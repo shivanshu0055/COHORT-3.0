@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding-top: 4px;
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            
+        }
+        .links{
+            padding-left: 20px;
+            padding-top: 8px;
+            cursor: pointer;
+            color: #9ba3b4;
+            font-size: large;
+        }
+        #search{
+            padding-left: 10px;
+            padding-top: 4px;
+        }
+        .Bold{
+            font-size: 60px;
+        }
+        #rounded{
+            border: 2px solid gray;
+            height: 26px;
+            border-radius: 9px;
+            font-size: 17px; 
+            text-align: center;
+        
+        }
+        .lis{
+            /* padding-top: 5px; */
+            list-style: none;
+            display: flex;
+            align-items: center;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body style="background-color: #0e0e0e; color: aliceblue; " >  
+    <header style="display: flex; padding-left: 200px; padding-right: 140px;
+                    justify-content: space-between;" >
+        <div style="display: flex;">
+            <img src="https://e7.pngegg.com/pngimages/195/304/png-clipart-visual-studio-code-logo-thumbnail-tech-companies-thumbnail.png" alt="" 
+                height="35px" width="35px" style="padding-right: 10px;">
+            <h2 style="padding-top: 5px;"> Visual Studio Code</h2>
+            <span class="links" style="padding-left: 60px;">Docs</span>
+            <span class="links">Updates</span>
+            <span class="links">Blog</span>
+            <span class="links">API</span>
+            <span class="links">Extensions</span>
+            <span class="links">FAQ</span>
+        </div>
+        <div id="search">
+            <input type="text" placeholder="Enter the text" style="height: 26px; width: 200px; background-color: transparent; border: 1px solid #0078d4; 
+                        border-radius: 3px;">
+            <button style="width: 100px; height: 35px; background-color: #0078d4; border-radius: 7px; cursor: pointer; 
+                         color: aliceblue; "><b>Download</b></button>
+        </div>
+    </header>
+    <br><br>
+    <div id="Banner" style="display: flex; justify-content: center;">
+        <p><span style="cursor: pointer; color: #0078d4;">Version 1.92</span> is now available! Read about the new features and fixes from July.</p>
+    </div>
+    <br>
+    <br>
+    <div id="Mid" style="display: flex; padding-left: 200px; padding-right: 200px;
+                    justify-content: space-between; gap: 80px;">
+        <div style="width: 80%; display: flex; flex-direction: column; justify-content: center;">
+            <div id="rounded">Free. Built on open source. Runs everywhere.</div><br>
+            <p class="Bold">Code Editing.</p>
+            <p class="Bold">Refined.</p>
+            <br>
+            <button style="width: 300px; height: 50px; background-color: #0078d4; border-radius: 7px; cursor: pointer; 
+                         color: aliceblue; font-size: 20px;"><b>Download For Windows</b></button><br>
+            <p><span style="cursor: pointer; color: #0078d4;">Web, Insiders edition,</span> or other platforms</p>
+        </div>
+        <div> <img src="https://code.visualstudio.com/assets/home/home-screenshot-mac-2x-v2.png" alt="" style="width:110%; height: 9 0%;"></div>
+    </div>
+    <br><br><br><br>
+    <div style="width: 100%; background-color: #080808;">
+
+        <div id="mid2" style="display: flex; justify-content: space-around; padding-left: 100px; padding-right: 100px; padding-top:25px;">
+            <div style="width: 30%; padding-top: 39px;"> 
+            <p style="font-size: 32px; "><b>Code in any language</b></p>
+            <br><br>
+            <p style="font-size: 21px; box-sizing: border-box; color: #9ba3b4;">VS Code supports almost every major programming language. 
+                Several ship in the box, like JavaScript, TypeScript, CSS
+                , and HTML, but extensions for others can be found in the 
+                VS Code Marketplace.</p>
+            </div>
+
+            <div style="font-size: 20px; color: #9ba3b4; padding-top: 35px; ">
+                <li class="lis"><img src="https://code.visualstudio.com/assets/home/language-js.png" alt="" style="width: 40px; height: 40px;"><span>JavaScript</span> </li>
+                <li class="lis"><img src="https://code.visualstudio.com/assets/home/language-python.png" alt="" style="width: 40px; height: 40px;">Python</li>
+                <li class="lis"><img src="https://code.visualstudio.com/assets/home/language-cpp.png" alt="" style="width: 40px; height: 40px;">C++</li>
+                <li class="lis"><img src="https://code.visualstudio.com/assets/home/language-python.png" alt="" style="width: 40px; height: 40px;">Java</li>
+                
+            </div>
+    
+            <div style="font-size: 20px; color: #9ba3b4; padding-top: 35px; ">
+                <li class="lis"><img src="https://code.visualstudio.com/assets/home/language-ts.png" alt="" style="width: 40px; height: 40px;">TypeScript</li>
+                <li class="lis"><img src="https://code.visualstudio.com/assets/home/language-cs.png" alt="" style="width: 40px; height: 40px;">C#</li>
+                <li class="lis"><img src="https://code.visualstudio.com/assets/home/language-json.png" alt="" style="width: 40px; height: 40px;">JSON</li>
+                <li class="lis"><img src="https://code.visualstudio.com/assets/home/language-cs.png" alt="" style="width: 40px; height: 40px;">PowerShell</li>
+            </div>
+            
+            <div style="font-size: 20px; color: #9ba3b4; padding-top: 35px; ">
+                <li class="lis"><img src="https://code.visualstudio.com/assets/home/language-php.png" alt="" style="width: 40px; height: 40px;">PHP</li>
+                <li class="lis"><img src="https://code.visualstudio.com/assets/home/language-python.png" alt="" style="width: 40px; height: 40px;">Python</li>
+                <li class="lis"><img src="https://code.visualstudio.com/assets/home/language-html.png" alt="" style="width: 40px; height: 40px;">HTML</li>
+                <li class="lis"><img src="https://code.visualstudio.com/assets/home/language-yaml.png" alt="" style="width: 40px; height: 40px;">YAML</li>
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
