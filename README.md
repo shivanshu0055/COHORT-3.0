@@ -1,4 +1,4 @@
-<h1>COHORT-3.0</h1>
+<h1>100x-DEVS COHORT-3.0</h1>
 
 Welcome to my <b>100xDevs COHORT-3.0</b> repository.<br>
 
