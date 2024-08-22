@@ -38,7 +38,7 @@ function edit(id){
     for(let i=0;i<todos.length;i++){
         if(todos[i].id==id){
             const task=prompt("Enter new task : ")
-            if(task){
+            if(task.length!=0){
             todos[i].text=task
             break;
             }
