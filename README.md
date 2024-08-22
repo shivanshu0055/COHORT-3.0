@@ -1,7 +1,16 @@
 <h1>COHORT-3.0</h1>
 
+Welcome to my <b>COHORT-3.0</b> repository.<br>
+
 This repo will be the place of my all the Assignments and Projects I will be making during <br>
-my COHORT 3.0 journey with Harkirat bhai.
+my COHORT 3.0 journey with Harkirat.<br>
+
+The purpose of this repository is to document my journey from scratch.
+
+Thanks 
+
+
+
 
 
 
