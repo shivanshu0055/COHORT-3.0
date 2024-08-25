@@ -5,6 +5,7 @@ program
 .name("TODO")
 .description("Task Handling")
 
+
 //ADDING A TASK
 program.command("addTask")
 .description("To Add a Task in TODO List")
@@ -28,7 +29,8 @@ program.command("addTask")
     })
 })
 
-//delete whole list
+
+//DELETE WHOLE LIST
 program.command("delete")
 .description("To Delete all the tasks in TODO List")
 .action(()=>{
@@ -38,6 +40,7 @@ program.command("delete")
     "deletedTasks": {}
 }`)
 })
+
 
 //MARK AS DONE
 program.command("markAsDone")
@@ -67,6 +70,7 @@ program.command("markAsDone")
     })
 })
 
+
 //SEE COMPLETED TASKS
 program.command("showDoneTasks")
 .description("To get a list of completed Tasks")
@@ -85,6 +89,7 @@ program.command("showDoneTasks")
         }
     })
 })
+
 
 //REMOVING A TASK
 program.command("removeTask")
