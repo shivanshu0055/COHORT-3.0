@@ -1,4 +1,4 @@
-# CLI TODO App
+# File System Based TODO App
 
 This is a file system based TODO application built with express.js
 
