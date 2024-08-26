@@ -1,0 +1,27 @@
+{
+   "allTasks": {
+      "1": {
+         "taskID": "1",
+         "task": "go to gym",
+         "status": true
+      },
+      "2": {
+         "taskID": "2",
+         "task": "beat vijay",
+         "status": false
+      },
+      "3": {
+         "taskID": "3",
+         "task": "go to sleep",
+         "status": false
+      }
+   },
+   "doneTasks": {
+      "1": {
+         "taskID": "1",
+         "task": "go to gym",
+         "status": true
+      }
+   },
+   "deletedTasks": {}
+}
