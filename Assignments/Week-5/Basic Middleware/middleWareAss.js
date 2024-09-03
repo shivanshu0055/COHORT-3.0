@@ -11,7 +11,7 @@ app.get("/numOfReq",(req,res)=>{
     res.send("Total number of requests sent are : "+numOfRequest)
 })
 
-app.use((req,res,next)=>{
+app.use((req,res,next)=> { 
     console.log("Request Method is : "+req.method);
     console.log("URL is : "+req.url);
     console.log("Request Time is : "+Date.now());
