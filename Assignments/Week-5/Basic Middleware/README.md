@@ -1,4 +1,4 @@
-# Week-5 Assignment: Basic Middlewares 🚀🚀
+# Week-5 Assignment: Basic Middlewares 🚀
 
 This assignment focuses on implementing basic middlewares in an Express.js application. The middleware handles request logging, including the request method, URL, and timestamp.
 
