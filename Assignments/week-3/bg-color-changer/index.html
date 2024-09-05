@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #colorPallete{
+            border-radius: 35px;
+            width: 80%;
+            margin: auto;
+            background-color: rgb(149, 183, 183);
+            margin-top: 650px;
+            height: 60px;
+            display: flex;
+            justify-content: space-around; 
+        }
+        .colors{
+
+            color: aliceblue;
+            font-size: 25px;
+            padding: 5px;
+            margin: auto;
+            border: 2px solid white;
+            border-radius: 15px;
+        }
+         
+    </style>
+<body>
+    <div id="colorPallete">
+        <button class="colors" id="blue" style="background-color: blue;" onclick="changeColor(`blue`)">BLUE</button>
+        <button class="colors" id="red" style="background-color: red;" onclick="changeColor(`red`)">RED</button>
+        <button class="colors" id="green" style="background-color: green;"  onclick="changeColor(`green`)">GREEN</button>
+        <button class="colors" id="yellow" style="background-color: rgb(170, 170, 74);" onclick="changeColor(`yellow`)">YELLOW</button>
+        <button class="colors" id="pink" style="background-color: pink;" onclick="changeColor(`pink`)">PINK</button>
+        <button class="colors" id="addButton" style="background-color: rgb(94, 76, 76);" onclick="addColor()">ADD COLOR</button>
+
+    </div>
+</body>
+<script>
+    let arr=[]
+    function changeColor(color){
+        console.log(color);
+        document.querySelector("body").style=`background-color:${color};`
+    }
+
+    function addColor(){
+        
+        let newColor=prompt("Enter the new color name or hexvalue")
+        console.log(typeof newColor);
+        if(arr.length==0){
+        const newButton=document.createElement("button")
+        newButton.textContent=newColor
+        newButton.className="colors"
+        newButton.id=newColor
+        newButton.style=`background-color: ${newColor};`
+        console.log(newButton);
+        newButton.setAttribute("onclick",`changeColor('${newColor}')`)
+        
+        arr[0]=newButton
+        document.querySelector("#colorPallete").appendChild(arr[0])
+        }
+        else{
+        const newButton=document.createElement("button")
+        newButton.textContent=newColor
+        newButton.className="colors"
+        newButton.id=newColor
+        newButton.style=`background-color: ${newColor};`
+        console.log(newButton);
+        newButton.setAttribute("onclick",`changeColor('${newColor}')`)
+        arr[0].parentNode.removeChild(arr[0]);
+        arr[0]=newButton
+        document.querySelector("#colorPallete").appendChild(arr[0])
+        }
+    }
+</script>
+</html>
