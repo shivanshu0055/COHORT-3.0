@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<style>
+    body {
+  font-family: 'Baloo 2', cursive;
+        }
+        
+    *{
+        
+        padding: 0;
+        margin: 0;
+        background-color: #FFC0CB;
+    }
+    #heading{
+        color: #060290;
+        font-size: 25px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headingImages{
+        height:120px;
+        width: 130px;
+    }
+    #midPart{
+        color: #060290;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    #typeOfPoke{
+        width: 120px;
+        height: 35px;
+        font-size: 22px;
+        border-radius: 10px;
+        color: #060290;
+        border: 3px solid #060290;
+    }
+    #numOfPoke{
+        width: 150px;
+        height: 32px;
+        font-size: 22px;
+        border-radius: 10px;
+        color: #060290;
+        border: 3px solid #060290;
+        padding-left: 10px;
+    }
+    #pokedex{
+        
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 80%;
+        margin-left:100px;
+        
+        padding: 20px;
+        
+    }
+    .card{
+        border: 1px solid #060290;
+        border-radius: 10px;
+        margin: 10px;
+        width: 200px;
+        height: 420px;
+        padding: 15px;
+        border-radius: 10px;
+        border: 2px solid #060290;
+        font-size: 19px;
+        box-shadow: 0 2px 2px #060290
+    }
+    
+    .pokeStats{
+        color: #060290;
+        padding-left: 8px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 900;
+    }
+    .pokeCardImage{
+        border-radius: 10px;
+        border: 2px solid #060290;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pokeImg{
+        width: 190px;
+        height: 200px;
+    }
+</style>
+
+<body>
+    
+    <div id="heading">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" class="headingImages" alt="">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" class="headingImages" alt="">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" class="headingImages" alt="">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" class="headingImages" alt="">
+        <h1>POKEMON FINDER</h1>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" class="headingImages" alt="">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" class="headingImages" alt="">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" class="headingImages" alt="">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" class="headingImages" alt="">
+    </div>
+    <br>
+    
+    <div id="midPart">
+      
+        <label for="typeOfPoke">Select Type </label>
+        <select name="" id="typeOfPoke">
+            <option value="" selected disabled></option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="electric">Electric</option>
+            <option value="grass">Grass</option>
+            <option value="ice">Ice</option>
+            <option value="fighting">Fighting</option>
+            <option value="poison">Poison</option>
+            <option value="ground">Ground</option>
+            <option value="flying">Flying</option>
+            <option value="rock">Rock</option>
+        </select>
+        
+        <label for="numOfPoke">Enter Number of Pokemons</label>
+        <input type="text" name="" id="numOfPoke">
+
+        <button style="width: 120px;
+        height: 37px;
+        font-size: 22px;
+        border-radius: 10px;
+        color: #002F6C;
+        border: 3px solid #002F6C;
+        cursor: pointer;
+        margin-left: 60px;" onclick="findPokes()">FIND</button>
+    </div>
+    <br><br><br>
+    
+    <div id="pokedex">
+        <!-- <div class="card"> -->
+            <!-- <div class="pokeCardImage">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" class="pokeImg">
+            </div>
+            <br>
+            <div class="pokeStats">
+               <li style="list-style-type:none; back">Name: Squirtell</li>
+               <li style="list-style-type:none;">Type: Water</li>
+               <li style="list-style-type:none;">Evolution: BigTell</li>
+               <li style="list-style-type:none;">Height: 40inches</li>
+               <li style="list-style-type:none;">Width: 50inches</li>
+               <li style="list-style-type:none;">Width: 50inches</li>
+            </div> -->
+        <!-- </div> -->
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
