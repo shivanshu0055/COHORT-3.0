@@ -33,13 +33,13 @@ async function fetchProcess(){
     let url
     pokes=[]
     const promises = [];
-
-    while (n < numOfPoke && pokenum <= 500) {
+    
+    while (pokenum <= 500) {
         const url = `https://pokeapi.co/api/v2/pokemon/${pokenum}`;
         promises.push(fetch(url).then(response => response.json()));
         pokenum++;
     }
-
+    
        const arr=await Promise.all(promises)
        arr.forEach((pokedata)=>{
         if(n<numOfPoke){
@@ -51,7 +51,7 @@ async function fetchProcess(){
         })
     }
        })
-        // await sleep(200);
+       
         console.log(n);
         console.log(pokenum);
         document.querySelector("#pokedex").innerHTML=""
