@@ -101,8 +101,8 @@
     }
 </style>
 
-<body>
-    
+<body>    
+
     <div id="heading">
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" class="headingImages" alt="">
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" class="headingImages" alt="">
@@ -148,7 +148,7 @@
     <br><br><br>
     
     <div id="pokedex">
-        <!-- <div class="card"> -->
+        <!-- <div class="card"> --> 
             <!-- <div class="pokeCardImage">
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" class="pokeImg">
             </div>
@@ -165,4 +165,108 @@
     </div>
 </body>
 <script src="index.js"></script>
-</html>
+</html> 
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .card {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            width: 150px;
+        }
+
+        .pokeCardImage img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #pokedex {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pokédex</h1>
+        <div>
+            <label for="numOfPoke">Number of Pokémon:</label>
+            <input type="number" id="numOfPoke" value="5" min="1">
+        </div>
+        <div>
+            <button onclick="findPokes()">Find Pokémon</button>
+        </div>
+        <div id="pokedex"></div>
+    </div>
+
+    <script>
+        let pokes = [];
+
+        function render() {
+            const pokedex = document.querySelector("#pokedex");
+            pokedex.innerHTML = ""; // Clear existing content before rendering new Pokémon
+
+            pokes.forEach((pokemon) => {
+                const newCard = document.createElement("div");
+                newCard.className = "card";
+                newCard.innerHTML = `
+                <div class='pokeCardImage'>
+                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png' alt="${pokemon.name}" class="pokeImg">
+                </div>
+                <br>
+                <div class="pokeStats">
+                    <li style="list-style-type:none;">Name: ${pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</li>
+                    <li style="list-style-type:none;">Ability: ${pokemon.abilities[0].ability.name[0].toUpperCase() + pokemon.abilities[0].ability.name.slice(1)}</li>
+                    <li style="list-style-type:none;">Height: ${pokemon.height}</li>
+                    <li style="list-style-type:none;">Weight: ${pokemon.weight}</li>
+                    <li style="list-style-type:none;">Experience: ${pokemon.base_experience}</li>
+                </div>
+                `;
+                pokedex.appendChild(newCard);
+            });
+        }
+
+        async function findPokes() {
+            const numOfPoke = parseInt(document.querySelector("#numOfPoke").value);
+            pokes = [];
+
+            try {
+                for (let i = 1; i <= numOfPoke; i++) {
+                    const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
+                    const response = await fetch(url);
+
+                    if (!response.ok) {
+                        throw new Error(`Error fetching Pokémon: ${response.statusText}`);
+                    }
+
+                    const data = await response.json();
+                    pokes.push(data);
+                }
+
+                render(); // Render once all Pokémon are fetched
+            } catch (error) {
+                console.error("Error fetching data: ", error);
+            }
+        }
+    </script>
+</body>
+
+</html> --> 
